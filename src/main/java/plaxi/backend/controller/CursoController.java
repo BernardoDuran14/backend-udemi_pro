@@ -99,7 +99,7 @@ public class CursoController {
             logger.info("Curso borrado lógicamente exitosamente con ID: {}", idCurso);
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         } catch (Exception e) {
-            logger.error("Error al borrar lógicamente el curso con ID: {} - {}", idCurso, e.getMessage());
+            logger.error("Error  al borrar lógicamente el curso con ID: {} - {}", idCurso, e.getMessage());
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
