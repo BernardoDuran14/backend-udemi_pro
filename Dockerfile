@@ -5,6 +5,7 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
+
 # Etapa 2: Ejecución con OpenJDK
 FROM openjdk:17
 WORKDIR /app
