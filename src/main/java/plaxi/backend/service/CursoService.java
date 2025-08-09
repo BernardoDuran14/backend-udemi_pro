@@ -57,7 +57,7 @@ public class CursoService {
                 .orElseThrow(() -> new Exception("Curso no encontrado"));
 
         if (!curso.getEstado()) {
-            throw new Exception("El curso ha sido desactivado.");
+            throw new Exception("El curso ha sido desactivado. ");
         }
 
         String portadaUrl = curso.getPortada() != null ? curso.getPortada().getUrl() : null;  // URL de la portada si existe
