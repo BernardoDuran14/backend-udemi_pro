@@ -78,18 +78,6 @@ public class CursoController {
         }
     }
 
-
-    // Actualizar un curso por ID
-    /*@PutMapping("/update/{idCurso}")
-    public ResponseEntity<ActualizarCursoDto2> updateCurso(@PathVariable String idCurso, @RequestBody ActualizarCursoDto2 cursoDto) throws Exception {
-        logger.info("Solicitud para actualizar el curso con ID: {}", idCurso);
-
-        Long id = Long.parseLong(idCurso);
-        ActualizarCursoDto2 cursoActualizado = cursoService.updateCurso(id, cursoDto);
-        logger.info("Curso actualizado exitosamente con ID: {}", idCurso);
-        return ResponseEntity.ok(cursoActualizado);
-    }*/
-
     // Borrado lógico del curso
     @DeleteMapping("/{idCurso}")
     public ResponseEntity<Void> deleteCurso(@PathVariable Long idCurso) {
